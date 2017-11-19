@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Special alarm minutes</title>
+	<link rel="stylesheet" type="text/css" href="test2.css">
+	<script src="http://www.clocklink.com/embed.js"></script><script type="text/javascript" language="JavaScript">obj=new Object;obj.clockfile="5005-green.swf";obj.TimeZone="EAT";obj.width=1000;obj.height=500;obj.wmode="transparent";showClock(obj);</script>
+
+	<script language="javascript">
+
+var timetoview = 300 ; 
+var settime = 0 ; 
+var whiletime =  timetoview  ; 
+while (whiletime>0){
+function ChangeText() {
+document.getElementById("dowinloaddivmoh").innerHTML = timetoview;
+timetoview = timetoview -1 ; 
+}
+    setTimeout("ChangeText()" ,settime);
+    whiletime = whiletime -1
+    settime = settime + 1000 ; 
+
+}
+var oo = '<h1>#The countdown has ended==> [Start again]</h1>';
+setTimeout("document.getElementById('dowinloaddivmoh').innerHTML =oo" ,settime);
+setTimeout("document.css")
+</script>
+<div id="dowinloaddivmoh"></div>
+</head>
+<body >
+
+<embed src="" align="baseline" border="0" width="0" height="0" type="audio/x-pn-realaudio-plugin" console="Clip1" controls="ControlPanel" autostart="true"></embed>
+<div id="title">
+
+	<center>
+	 <h1 >Special alarm minutes in Falcon.811</h1>
+	</center>
+</div>
+
+</body>
+</html>
