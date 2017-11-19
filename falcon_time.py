@@ -10,6 +10,7 @@
 #|
 import webbrowser #A library call enables you to handle web pages
 import time #Call library enables you to handle time
+from os.path import pardir
 print('''
 ######################################
 #[Special alarm minutes in Falcon.811]#
@@ -30,7 +31,7 @@ while True:
     falcon_time=time.sleep(1800)
     print(falcon_time)
     #When the time is up we bring in the requested page
-    test = "file:///E:/test/test1.html"
+    test = pardir+"test1.html"
     webbrowser.open_new_tab(test )
     print(user)
  elif user == 'no':
